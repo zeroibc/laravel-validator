@@ -1,57 +1,23 @@
 <?php namespace Prettus\Validator\Exceptions;
 
-use Illuminate\Contracts\Support\Arrayable;
-use Illuminate\Contracts\Support\Jsonable;
+use Dingo\Api\Exception\ResourceException;
 use Illuminate\Support\MessageBag;
 
 /**
  * Class ValidatorException
  * @package Prettus\Validator\Exceptions
  */
-class ValidatorException extends \Exception implements Jsonable, Arrayable
+class ValidatorException extends ResourceException
 {
-    /**
-     * @var MessageBag
-     */
-    protected $messageBag;
+
 
     /**
      * @param MessageBag $messageBag
      */
     public function __construct(MessageBag $messageBag)
     {
-        $this->messageBag = $messageBag;
+        parent::__construct('参数验证失败',$messageBag);
     }
 
-    /**
-     * @return MessageBag
-     */
-    public function getMessageBag()
-    {
-        return $this->messageBag;
-    }
 
-    /**
-     * Get the instance as an array.
-     *
-     * @return array
-     */
-    public function toArray()
-    {
-        return [
-            'error'=>'validation_exception',
-            'error_description'=>$this->getMessageBag()
-        ];
-    }
-
-    /**
-     * Convert the object to its JSON representation.
-     *
-     * @param  int $options
-     * @return string
-     */
-    public function toJson($options = 0)
-    {
-        return json_encode($this->toArray(), $options);
-    }
 }
