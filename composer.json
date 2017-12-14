@@ -2,6 +2,12 @@
     "name": "zeroibc/laravel-validation",
     "description": "Laravel Validation Service",
     "keywords": ["laravel", "validation", "service"],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/zeroibc/laravel-validator"
+        }
+    ],
     "authors": [
         {
             "name": "Anderson Andrade",
@@ -17,5 +23,6 @@
         "psr-4": {
             "Prettus\\Validator\\": "src/Prettus/Validator/"
         }
-    }
+    },
+  "minimum-stability":"dev"
 }
