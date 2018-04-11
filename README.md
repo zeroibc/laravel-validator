@@ -4,6 +4,7 @@
 [![Latest Stable Version](https://poser.pugx.org/prettus/laravel-validation/v/stable.svg)](https://packagist.org/packages/prettus/laravel-validation)
 [![Latest Unstable Version](https://poser.pugx.org/prettus/laravel-validation/v/unstable.svg)](https://packagist.org/packages/prettus/laravel-validation)
 [![License](https://poser.pugx.org/prettus/laravel-validation/license.svg)](https://packagist.org/packages/prettus/laravel-validation)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fzeroibc%2Flaravel-validator.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fzeroibc%2Flaravel-validator?ref=badge_shield)
 
 ## Installation
 
@@ -180,3 +181,7 @@ Anderson Andrade - <contato@andersonandra.de>
 ## Credits
 
 http://culttt.com/2014/01/13/advanced-validation-service-laravel-4/
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fzeroibc%2Flaravel-validator.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fzeroibc%2Flaravel-validator?ref=badge_large)
